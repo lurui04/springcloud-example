@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/springcloud.iml
+/springCloudEureka/springCloudEureka.iml
+/springCloudRibbon/springCloudRibbon.iml
+/springCloudEureka/eureka_server/eureka_server.iml
