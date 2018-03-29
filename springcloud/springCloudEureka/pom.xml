@@ -14,7 +14,9 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>eureka_server</module>
+        <module>rest_server</module>
     </modules>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
