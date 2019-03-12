@@ -1,0 +1,22 @@
+# access.log日志配置
+server:
+  tomcat:
+    accesslog:
+      pattern: '%{X-Forwarded-For}i %h %l %u %t %T "%r" %s %b'
+      enabled: true
+      directory: ${user.dir}/logs
+      prefix: access.${HOST:127.0.0.1}.${server.port:8080}
+
+
+spring:
+  redis:
+    pool:
+      max-idle: 300
+      min-idle: 1
+      max-wait: -1
+      max-active: 1000
+    database: 0
+    sentinel:
+      master: mymaster
+      nodes: 127.0.0.1:26379
+
