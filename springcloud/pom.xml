@@ -8,6 +8,7 @@
     <modules>
         <module>springCloudEureka</module>
         <module>springCloudRibbon</module>
+        <module>springboot</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -21,7 +22,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>1.5.11.RELEASE</version>
     </parent>
 
     <build>
