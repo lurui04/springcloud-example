@@ -10,13 +10,31 @@ server:
 
 spring:
   redis:
-    pool:
-      max-idle: 300
-      min-idle: 1
-      max-wait: -1
-      max-active: 1000
     database: 0
+    lettuce:
+      shutdown-timeout: 1000ms
+      pool:
+        max-active:
+        max-idle:
+        max-wait:
+        min-idle:
     sentinel:
       master: mymaster
       nodes: 127.0.0.1:26379
+
+  #邮箱smtp相关配置
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: luruigx08@163.com
+    password: lurui123456
+    protocol: smtp
+    defaultEncoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
+          required: true
 

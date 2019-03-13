@@ -1,15 +1,10 @@
 package com.ljmoon.springcloud.redis.service;
 
-        import org.slf4j.Logger;
-        import org.slf4j.LoggerFactory;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.data.redis.core.StringRedisTemplate;
-        import org.springframework.stereotype.Service;
-        import redis.clients.jedis.Jedis;
-        import redis.clients.jedis.JedisSentinelPool;
-
-        import java.util.HashSet;
-        import java.util.Set;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Service;
 
 /**
  * @author lurui
