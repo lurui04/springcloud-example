@@ -14,10 +14,10 @@ spring:
     lettuce:
       shutdown-timeout: 1000ms
       pool:
-        max-active:
-        max-idle:
-        max-wait:
-        min-idle:
+        max-active: 8
+        min-idle: 0
+        max-wait: -1ms
+        max-idle: 8
     sentinel:
       master: mymaster
       nodes: 127.0.0.1:26379

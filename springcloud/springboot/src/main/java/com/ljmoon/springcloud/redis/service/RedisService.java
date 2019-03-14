@@ -26,4 +26,5 @@ public class RedisService {
         this.redisTemplate.opsForValue().set(key, value);
     }
 
+
 }
