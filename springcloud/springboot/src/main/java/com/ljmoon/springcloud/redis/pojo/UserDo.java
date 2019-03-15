@@ -1,13 +1,15 @@
 package com.ljmoon.springcloud.redis.pojo;
 
+import java.io.Serializable;
+
 /**
+ * @author lurui
  * @Package: com.ljmoon.springcloud.redis.pojo
  * @ClassName: UserDo
  * @Description: 类描述
- * @author lurui
  * @Date: 2019-03-14 19:56
  */
-public class UserDo {
+public class UserDo implements Serializable {
 
     private String userName;
 

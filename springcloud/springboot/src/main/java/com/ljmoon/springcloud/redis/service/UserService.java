@@ -20,14 +20,14 @@ public class UserService {
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
 
-    @CachePut(value = "userinfo", key = "#userDo.userName",condition = "#userDo.age ne 12")
+    @CachePut(value = "userinfo", condition = "#userDo.age ne 12")
     public UserDo saveUser(UserDo userDo) {
         logger.info("执行数据库保存操作");
         return userDo;
     }
 
-    @Cacheable(value = "userinfo" ,key = "#userDo.userName")
-    public UserDo getUserInfo(UserDo userDo){
+    @Cacheable(value = "userinfo", key = "#userDo.userName")
+    public UserDo getUserInfo(UserDo userDo) {
         logger.info("执行数据库查询");
         return userDo;
     }

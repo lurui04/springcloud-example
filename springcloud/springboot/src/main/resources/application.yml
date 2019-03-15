@@ -8,6 +8,7 @@ server:
       prefix: access.${HOST:127.0.0.1}.${server.port:8080}
 
 
+
 spring:
   redis:
     database: 0
@@ -38,3 +39,6 @@ spring:
           enable: true
           required: true
 
+logging:
+  level:
+   com.ljmoon.*: debug
