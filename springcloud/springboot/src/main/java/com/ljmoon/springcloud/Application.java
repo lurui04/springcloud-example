@@ -4,12 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author liucx47
- * @version V1.0
- * @Package: com.taikanglife.tkimp
+ * @Package: com.ljmoon.springcloud
  * @ClassName: Application
- * @Description: springboot入口类
- * @date: 2017/10/14
+ * @Description: 类描述
+ * @author lurui
+ * @Date: 2019-05-15 14:36
  */
 @SpringBootApplication
 public class Application {
