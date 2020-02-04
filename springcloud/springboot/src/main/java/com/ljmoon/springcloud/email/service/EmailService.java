@@ -20,10 +20,14 @@ import javax.mail.internet.MimeMessage;
 @Service
 public class EmailService {
 
-    @Autowired()
-    private JavaMailSender mailSender;
+    private final JavaMailSender mailSender;
 
     private static final Logger logger = LoggerFactory.getLogger(EmailService.class);
+
+    @Autowired
+    public EmailService(JavaMailSender mailSender) {
+        this.mailSender = mailSender;
+    }
 
     @Async
     public void sendEmail(String from, String to, String subject, String content) {

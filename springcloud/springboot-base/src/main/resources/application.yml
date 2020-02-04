@@ -1,0 +1,30 @@
+logging:
+  config: classpath:logback-spring.xml
+
+# access.log日志配置
+server:
+  tomcat:
+    accesslog:
+      pattern: '%{X-Forwarded-For}i %h %l %u %t %D "%r" %s %b'
+      enabled: true
+      directory: ${user.dir}/logs
+      prefix: access.${HOST:127.0.0.1}.${server.port:8080}
+
+spring:
+  # 多环境配置文件激活属性
+  profiles:
+    active: test
+  mvc:
+  ##   告诉SpringBoot当出现404错误时,直接抛出异常.
+  throw-exception-if-no-handler-found: true
+  resources:
+    ##   告诉SpringBoot不要为我们工程中的资源文件建立映射
+    add-mappings: true
+  ## TODO 此处是干嘛的
+  aop:
+    proxy-target-class: true
+
+
+
+      
+

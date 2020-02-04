@@ -9,6 +9,7 @@
         <module>springCloudEureka</module>
         <module>springCloudRibbon</module>
         <module>springboot</module>
+        <module>springboot-base</module>
     </modules>
     <packaging>pom</packaging>
 

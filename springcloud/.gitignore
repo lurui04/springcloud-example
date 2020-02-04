@@ -9,3 +9,13 @@
 /springboot/target/
 /springCloudRibbon/target/
 /logs/
+.idea\
+springboot-base.iml
+springboot-base.iml
+target\
+target\
+target\
+logs\
+.idea\
+classes\
+/springboot-base/target/
