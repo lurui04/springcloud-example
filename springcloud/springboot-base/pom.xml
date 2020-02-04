@@ -63,12 +63,7 @@
             <version>2.1.6</version>
         </dependency>
         <!--excel导入导出 end-->
-
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
+        
 
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
