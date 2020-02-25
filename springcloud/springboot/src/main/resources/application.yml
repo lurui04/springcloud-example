@@ -1,15 +1,22 @@
-# access.log日志配置
-server:
-  tomcat:
-    accesslog:
-      pattern: '%{X-Forwarded-For}i %h %l %u %t %T "%r" %s %b'
-      enabled: true
-      directory: ${user.dir}/logs
-      prefix: access.${HOST:127.0.0.1}.${server.port:8080}
-
-
+logging:
+  config: classpath:logback-spring.xml
 
 spring:
+  profiles:
+    active: dev
+
+  rabbitmq:
+    host: localhost
+    port: 5673
+    username: lurui04
+    password: Lurui_123456
+    virtual-host: test
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+
   redis:
     database: 0
     lettuce:
@@ -39,6 +46,6 @@ spring:
           enable: true
           required: true
 
-logging:
-  level:
-   com.ljmoon.*: debug
+
+
+
